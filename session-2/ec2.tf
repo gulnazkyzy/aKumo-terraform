@@ -2,7 +2,7 @@ resource "aws_instance" "first_ec2" {
   ami           = "ami-07b0c09aab6e66ee9"
   instance_type = "t2.micro"
   tags = {
-    Name        = "testing"
+    Name        = "first"
     Environment = "dev"
   }
 }
@@ -11,7 +11,7 @@ resource "aws_instance" "second_ec2" {
   ami           = "ami-07b0c09aab6e66ee9"
   instance_type = "t2.micro"
   tags = {
-    Name        = "testing"
+    Name        = "second"
     Environment = "dev"
   }
 }
